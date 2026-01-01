@@ -1,7 +1,4 @@
 package cz.dvorak.lolstatsbackend.controller;
-
-import cz.dvorak.lolstatsbackend.dto.MatchStatisticsRequestDto;
-import cz.dvorak.lolstatsbackend.dto.MatchStatisticsResponseDto;
 import cz.dvorak.lolstatsbackend.dto.RiotAccountDto;
 import cz.dvorak.lolstatsbackend.service.MatchStatisticsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +13,6 @@ public class MatchStatisticsController {
 
     @Autowired
     private MatchStatisticsService matchStatisticsService;
-
-
     @GetMapping
     public String test() {
       return "OK";
